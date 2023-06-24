@@ -17,7 +17,6 @@
  * 
  * @author Warren Walters - Cloud Code Academy
  * @version 1.0
- * @since 2023-06-24 
  */
 
 public with sharing class VariablesDatatypesOperators {
