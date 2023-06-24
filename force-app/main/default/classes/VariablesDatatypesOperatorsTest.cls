@@ -129,11 +129,8 @@ public class VariablesDatatypesOperatorsTest {
 
     @IsTest
     static void testPerformDivisionAndRoundOff() {
-        // Test case where rounding down is correct
         Assert.areEqual(2, VariablesDatatypesOperators.performDivisionAndRoundOff((Double)5.0, (Double)2.0), 'Incorrect division result when rounding down is correct');
-        // Test case where rounding up is correct
         Assert.areEqual(2, VariablesDatatypesOperators.performDivisionAndRoundOff((Double)5.5, (Double)2.0), 'Incorrect division result when rounding up is correct');
-        // Test case where exact division
         Assert.areEqual(2, VariablesDatatypesOperators.performDivisionAndRoundOff((Double)4.0, (Double)2.0), 'Incorrect division result when exact division is performed');
     }
 
