@@ -1,3 +1,25 @@
+/**
+ * This is the VariablesDatatypesOperators class, part of the Developer Kickstart Week 1 curriculum 
+ * at Cloud Code Academy. This class serves as an introduction to the basic elements of Apex programming 
+ * including variables, data types, and operators.
+ * 
+ * This class is an essential tool for beginner developers who are just starting their journey in Salesforce 
+ * development. It covers all the foundational elements necessary to understand and write Apex code effectively.
+ * 
+ * Topics covered in this class include:
+ * - Understanding different data types in Apex such as Integer, Decimal, Double, String, Boolean, etc.
+ * - Understanding how to declare and use variables in Apex.
+ * - Understanding how to use various types of operators in Apex including arithmetic operators, 
+ *   comparison operators, logical operators, and more.
+ *
+ * Users of this class can expect to gain a strong foundation in Apex programming and be prepared for 
+ * more advanced topics in Salesforce development.
+ * 
+ * @author Warren Walters - Cloud Code Academy
+ * @version 1.0
+ * @since 2023-06-24 
+ */
+
 public with sharing class VariablesDatatypesOperators {
     /**
      * Performs addition of two numbers.
@@ -86,6 +108,7 @@ public with sharing class VariablesDatatypesOperators {
     /**
      * Combines three strings into one.
      * The goal is to concatenate firstPart, secondPart, and thirdPart to make a complete sentence.
+     * Example: combineStrings('Hello', 'World', '!') should return 'Hello World!'
      * @param firstPart The first part of the sentence.
      * @param secondPart The second part of the sentence.
      * @param thirdPart The third part of the sentence.
@@ -99,6 +122,7 @@ public with sharing class VariablesDatatypesOperators {
 
     /**
      * Checks if a date is in the past.
+     * Example: isDateInPast(Date.newInstance(2019, 1, 1)) should return true
      * @param dt The date to check.
      * @return True if the date is in the past, False otherwise.
      */
@@ -108,19 +132,8 @@ public with sharing class VariablesDatatypesOperators {
     }
 
     /**
-     * Converts the number of minutes to milliseconds.
-     * The conversion factor from minutes to milliseconds is a constant.
-     * @param minutes The number of minutes.
-     * @return The number of milliseconds equivalent to the given number of minutes.
-     */
-    public static Integer convertMinutesToMilliseconds(Integer minutes) {
-        final Integer MILLISECONDS_PER_MINUTE = 60000;
-        Integer milliseconds = minutes * MILLISECONDS_PER_MINUTE;
-        return milliseconds;
-    }
-
-    /**
      * Checks if a date is today or in the future.
+     * Example: isDateTodayOrFuture(Date.newInstance(2019, 1, 1)) should return false
      * @param dt The date to check.
      * @return True if the date is today or in the future, False otherwise.
      */
@@ -130,7 +143,21 @@ public with sharing class VariablesDatatypesOperators {
     }
 
     /**
+     * Converts the number of minutes to milliseconds.
+     * The conversion factor from minutes to milliseconds is a constant.
+     * Example: convertMinutesToMilliseconds(1) should return 60000
+     * @param minutes The number of minutes.
+     * @return The number of milliseconds equivalent to the given number of minutes.
+     */
+    public static Integer convertMinutesToMilliseconds(Integer minutes) {
+        final Integer MILLISECONDS_PER_MINUTE = 60000;
+        Integer milliseconds = minutes * MILLISECONDS_PER_MINUTE;
+        return milliseconds;
+    }    
+
+    /**
      * Calculates the average of three numbers.
+     * Example: averageOfThreeNumbers(1, 2, 3) should return 2
      * @param a The first number.
      * @param b The second number.
      * @param c The third number.
@@ -144,6 +171,7 @@ public with sharing class VariablesDatatypesOperators {
      * Adjusts the order of operations in an arithmetic expression to produce a desired result.
      * In this case, parentheses are added to the expression (5 + 7) * 3 to ensure that addition
      * is performed before multiplication.
+     * Example: adjustOrderOfOperations1(5, 7, 3) should return 36
      * @param a The first number.
      * @param b The second number.
      * @param c The third number.
@@ -175,6 +203,7 @@ public with sharing class VariablesDatatypesOperators {
      * In this case, parentheses are added to the expression (a * b - c) / d + e to ensure that 
      * multiplication and subtraction are performed before division, which in turn is performed 
      * before addition.
+     * Example: adjustOrderOfOperations3(1, 2, 3, 4, 5) should return 4.5
      * @param a The first number.
      * @param b The second number.
      * @param c The third number.
@@ -227,6 +256,7 @@ public with sharing class VariablesDatatypesOperators {
     /**
      * Calculate the weekly and monthly paycheck based on hourly rate and number of hours.
      * Weekly Paycheck is calculated by the formula: rate multiplied by hours.
+     * Example: calculateWeeklyPaycheck(10.0, 40.0) should return 400.0
      * @param hourlyRate The rate of pay per hour.
      * @param numberOfHours The number of hours worked in a week.
      * @return A Decimal representing the weekly paycheck.
@@ -242,6 +272,7 @@ public with sharing class VariablesDatatypesOperators {
      * Calculate the weekly and monthly paycheck based on hourly rate and number of hours.
      * Weekly Paycheck is calculated by the formula: rate multiplied by hours.
      * Monthly Paycheck is calculated by the formula: weekly paycheck multiplied by 4.
+     * Example: calculateMonthlyPaycheck(10.0, 40.0) should return 1600.0
      * @param hourlyRate The rate of pay per hour.
      * @param numberOfHours The number of hours worked in a week.
      * @return A Decimal representing the monthly paycheck.
@@ -260,6 +291,7 @@ public with sharing class VariablesDatatypesOperators {
     /**
      * Calculates the total cost based on price per unit, number of units, and a sales tax rate.
      * Total cost is calculated by the formula: (pricePerUnit * numberOfUnits) * (1 + salesTaxRate).
+     * Example: calculateTotalCost(1.0, 2, 0.05) should return 2.1
      * @param pricePerUnit The price per unit of the item.
      * @param numberOfUnits The number of units purchased.
      * @param salesTaxRate The sales tax rate as a decimal (e.g., 0.05 for 5% tax).
