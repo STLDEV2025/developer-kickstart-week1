@@ -15,7 +15,7 @@
  * Users of this class can expect to gain a strong foundation in Apex programming and be prepared for 
  * more advanced topics in Salesforce development.
  * 
- * @author Warren Walters - Cloud Code Academy
+ * @author Your Name
  * @version 1.0
  */
 
