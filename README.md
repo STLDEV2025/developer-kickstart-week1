@@ -14,7 +14,7 @@ Through this practice project, you'll gain foundational knowledge about:
 This foundational knowledge will prepare you for more advanced topics in Salesforce development.
 
 ## Setup
-[Setup Video](https://vimeo.com/839597882/46fc06d93e)
+[Video Overview](https://vimeo.com/839597882/46fc06d93e)
 
 To get started, you'll need a Salesforce Trailhead Playground. If you don't have one, you can create it for free from any Trailhead module.
 
