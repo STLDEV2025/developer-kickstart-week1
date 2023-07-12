@@ -100,7 +100,7 @@ public with sharing class VariablesDatatypesOperators {
     /**
      * Combines three strings into one.
      * The goal is to concatenate firstPart, secondPart, and thirdPart to make a complete sentence.
-     * Example: combineStrings('Hello', 'World', '!') should return 'Hello World!'
+     * Example: combineStrings('Hello', 'World', '!') should return 'HelloWorld!'
      * @param firstPart The first part of the sentence.
      * @param secondPart The second part of the sentence.
      * @param thirdPart The third part of the sentence.
