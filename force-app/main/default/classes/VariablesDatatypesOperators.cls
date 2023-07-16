@@ -231,12 +231,12 @@ public with sharing class VariablesDatatypesOperators {
      * @param b The denominator.
      * @return The quotient as a rounded Integer.
      */
-    public static Integer performDivisionAndRoundOff(Double a, Double b) {
+    public static Integer performDivisionAndCast(Double a, Double b) {
         // Perform the division and round off the result.
         Double divisionResult = null;
 
         // Write the code for type casting the divisionResult to an Integer
-        Integer roundedResult = (Integer)divisionResult;
+        Integer roundedResult = null;
         return null; // Replace null with the variable you used to store the result
     }
 
