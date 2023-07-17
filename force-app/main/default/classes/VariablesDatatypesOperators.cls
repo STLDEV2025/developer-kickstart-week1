@@ -100,7 +100,7 @@ public with sharing class VariablesDatatypesOperators {
     /**
      * Combines three strings into one.
      * The goal is to concatenate firstPart, secondPart, and thirdPart to make a complete sentence.
-     * Example: combineStrings('Hello', 'World', '!') should return 'HelloWorld!'
+     * Example: combineStrings('Hello', 'World', '!') should return '#Hello CodeWorld!!'
      * @param firstPart The first part of the sentence.
      * @param secondPart The second part of the sentence.
      * @param thirdPart The third part of the sentence.
@@ -225,7 +225,7 @@ public with sharing class VariablesDatatypesOperators {
     
 
     /**
-     * Performs division and returns the result as a rounded Integer.
+     * Performs division and returns the result as a casted Integer.
      * It should cast the result to an Integer.
      * @param a The numerator.
      * @param b The denominator.

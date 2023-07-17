@@ -70,12 +70,18 @@ public class VariablesDatatypesOperatorsTest {
     static void testConcatenateStrings() {
         String result = VariablesDatatypesOperators.concatenateStrings('Hello', 'World');
         Assert.areEqual('HelloWorld', result, 'Incorrect concatenateStrings result');
+        result = VariablesDatatypesOperators.concatenateStrings('Hello', 'Cloud');
+        Assert.areEqual('HelloCloud', result, 'Incorrect concatenateStrings result');
     }
 
     @IsTest
     static void testCombineStrings() {
-        String result = VariablesDatatypesOperators.combineStrings('Hello', ' ', 'World');
-        Assert.areEqual('Hello World', result, 'Incorrect combineStrings result');
+        String result = VariablesDatatypesOperators.combineStrings('Hello', 'World', '!');
+        Assert.areEqual('#Hello CodeWorld!!', result, 'Incorrect combineStrings result');
+        result = VariablesDatatypesOperators.combineStrings('Hello', 'Cloud', '');
+        Assert.areEqual('#Hello CodeCloud!', result, 'Incorrect combineStrings result');
+        result = VariablesDatatypesOperators.combineStrings('I', '♥', '');
+        Assert.areEqual('#I Code♥!', result, 'Incorrect combineStrings result');
     }
 
     @IsTest
@@ -117,8 +123,8 @@ public class VariablesDatatypesOperatorsTest {
 
     @IsTest
     static void testAdjustOrderOfOperations2() {
-        Assert.areEqual(43, VariablesDatatypesOperators.adjustOrderOfOperations2(), 'Incorrect result for adjustOrderOfOperations2');
-        Assert.areNotEqual(35, VariablesDatatypesOperators.adjustOrderOfOperations2(), 'Incorrect result for adjustOrderOfOperations2');
+        Assert.areEqual(8, VariablesDatatypesOperators.adjustOrderOfOperations2(), 'Incorrect result for adjustOrderOfOperations2');
+        Assert.areNotEqual(43, VariablesDatatypesOperators.adjustOrderOfOperations2(), 'Incorrect result for adjustOrderOfOperations2');
     }
 
     @IsTest
