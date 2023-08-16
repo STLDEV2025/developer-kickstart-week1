@@ -29,7 +29,7 @@ public with sharing class VariablesDatatypesOperators {
      * @return The sum of the two numbers, or null if either number is null.
      */
     public static Integer addition(Integer a, Integer b) {
-        return null; // Replace null with the variable you used to store the result
+        return a + b; // Replace null with the variable you used to store the result
     }
 
     /**
