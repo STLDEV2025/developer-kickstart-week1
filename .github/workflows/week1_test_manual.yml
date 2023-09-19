@@ -1,0 +1,32 @@
+name: Run Apex Week 1 Unit Tests Manually
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - uses: actions/checkout@v2
+
+    - name: Install sfdx with npm
+      run: |
+        npm i @salesforce/cli --global
+
+    - name: Store SFDX Auth URL In File
+      run: | #sfdx force:org:display --verbose > Sfdx Auth URL
+        echo ${{ secrets.SFDX_AUTH_URL }} > sfdxauth.txt
+
+    - name: Add SFDX Org
+      run: |
+        sf force auth sfdxurl store -f sfdxauth.txt -a org
+
+    - name: Deploy classes to org
+      run: |
+        sf force source deploy -u org -p force-app/main/default/classes/
+
+    - name: Run Apex Unit Tests
+      run: |
+        sf apex run test -r human -c --wait 10 -o org -n VariablesDatatypesOperatorsTest
