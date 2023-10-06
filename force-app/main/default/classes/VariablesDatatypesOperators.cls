@@ -15,8 +15,8 @@
  * Users of this class can expect to gain a strong foundation in Apex programming and be prepared for 
  * more advanced topics in Salesforce development.
  * 
- * @author Your Name
- * @version 1.0
+ * If statements are not specifically covered in the lesson this week, but review week 2 flow control section for an overview if needed.
+ * Resources: https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_if_else.htm
  */
 
 public with sharing class VariablesDatatypesOperators {
@@ -69,6 +69,8 @@ public with sharing class VariablesDatatypesOperators {
     /**
      * Checks if a number is even.
      * Example: isEven(2) should return true
+     * This concept is not specifically covered in the content this week, but you can use the modulus method to check if a number is even.
+     * Resources: https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_mod
      * @param num The number to check.
      * @return True if the number is even, False otherwise.
      */
