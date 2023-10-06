@@ -183,8 +183,8 @@ public with sharing class VariablesDatatypesOperators {
      */
     public static Integer adjustOrderOfOperations2() {
         // Add parentheses in the below expression to change the result.
-        // The result of the expression as it is right now is 35. 
-        // You should add parentheses so that the result of the expression becomes 43.
+        // The result of the expression as it is right now is 43. 
+        // You should add parentheses so that the result of the expression becomes 8.
         Integer answer = 48 - 15 + 5 * 2;
         // Return the modified result.
         return null; // Replace null with the variable you used to store the result
