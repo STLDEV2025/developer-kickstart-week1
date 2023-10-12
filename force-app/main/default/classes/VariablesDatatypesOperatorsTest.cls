@@ -94,18 +94,18 @@ public class VariablesDataTypesOperatorsTest {
     }
 
     @IsTest
-    static void testConvertMinutesToMilliseconds() {
-        Integer result = VariablesDataTypesOperators.convertMinutesToMilliseconds(1);
-        Assert.areEqual(60000, result, 'Incorrect convertMinutesToMilliseconds result');
-    }
-
-    @IsTest
     static void testIsDateTodayOrFuture() {
         Boolean result = VariablesDataTypesOperators.isDateTodayOrFuture(Date.today().addDays(1));
         Assert.areEqual(true, result, 'Incorrect isDateTodayOrFuture result');
 
         result = VariablesDataTypesOperators.isDateTodayOrFuture(Date.today().addDays(-1));
         Assert.areEqual(false, result, 'Incorrect isDateTodayOrFuture result');
+    }
+
+    @IsTest
+    static void testConvertMinutesToMilliseconds() {
+        Integer result = VariablesDataTypesOperators.convertMinutesToMilliseconds(1);
+        Assert.areEqual(60000, result, 'Incorrect convertMinutesToMilliseconds result');
     }
 
     @IsTest

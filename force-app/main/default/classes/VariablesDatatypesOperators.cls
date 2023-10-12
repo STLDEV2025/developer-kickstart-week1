@@ -152,7 +152,7 @@ public with sharing class VariablesDataTypesOperators {
 
     /**
      * Calculates the average of three numbers.
-     * Formula: Average = (Sum of Observations) ÷ (Total Numbers of Observations)
+     * Formula: Average = (Sum of Numbers) ÷ (Total Numbers)
      * Example: averageOfThreeNumbers(1, 2, 3) should return 2
      * @param a The first number.
      * @param b The second number.
