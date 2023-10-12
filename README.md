@@ -23,7 +23,7 @@ After you've set up your Trailhead Playground:
 1. Install Visual Studio Code from [here](https://code.visualstudio.com/download).
 2. Install Salesforce Extension Pack in Visual Studio Code. This can be done by searching 'Salesforce Extension Pack' in the Extensions view in VS Code and clicking Install.
 3. Authorize your Trailhead Playground in Visual Studio Code. Press `Ctrl + Shift + P` to open the command palette and type 'SFDX: Authorize an Org', then press Enter. Follow the steps in the browser to log in to your Playground, then return to VS Code.
-4. Deploy the Apex Class by right clicking on the `VariablesDatatypesOperators` and  `VariablesDatatypesOperatorsTest` file a using the option SFDX: Deploy Source to Org.
+4. Deploy the Apex Class by right clicking on the `VariablesDataTypesOperators` and  `VariablesDataTypesOperatorsTest` file a using the option SFDX: Deploy Source to Org.
 
 ## Running the Test Classes
 

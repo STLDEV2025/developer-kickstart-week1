@@ -1,5 +1,5 @@
 /**
- * This is the VariablesDatatypesOperators class, part of the Developer Kickstart Week 1 curriculum 
+ * This is the VariablesDataTypesOperators class, part of the Developer Kickstart Week 1 curriculum 
  * at Cloud Code Academy. This class serves as an introduction to the basic elements of Apex programming 
  * including variables, data types, and operators.
  * 
@@ -16,10 +16,12 @@
  * more advanced topics in Salesforce development.
  * 
  * If statements are not specifically covered in the lesson this week, but review week 2 flow control section for an overview if needed.
- * Resources: https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_if_else.htm
+ * Resources: https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_if_else.htm 
+ * 
+ * @author Your Name
  */
 
-public with sharing class VariablesDatatypesOperators {
+public with sharing class VariablesDataTypesOperators {
     /**
      * Performs addition of two numbers.
      * If either of the numbers is null, return null.
@@ -56,7 +58,7 @@ public with sharing class VariablesDatatypesOperators {
 
     /**
      * Performs division of two numbers.
-     * If the second number is zero, return 0 to avoid division by zero error.
+     * If the denominator is zero, return 0 to avoid division by zero error.
      * Example: division(6, 3) should return 2
      * @param a The numerator.
      * @param b The denominator.
@@ -83,7 +85,7 @@ public with sharing class VariablesDatatypesOperators {
      * Checks if a number is positive.
      * Example: isPositive(2) should return true
      * @param num The number to check.
-     * @return True if the number is positive, False otherwise.
+     * @return true if the number is positive, false otherwise.
      */
     public static Boolean isPositive(Integer num) {
         return null; // Replace null with the variable you used to store the result
@@ -136,19 +138,21 @@ public with sharing class VariablesDatatypesOperators {
 
     /**
      * Converts the number of minutes to milliseconds.
-     * The conversion factor from minutes to milliseconds is a constant.
+     * The conversion factor from minutes to milliseconds is a constant of 60000.
+     * Formula: Milliseconds = minutes * 60000
      * Example: convertMinutesToMilliseconds(1) should return 60000
      * @param minutes The number of minutes.
      * @return The number of milliseconds equivalent to the given number of minutes.
      */
     public static Integer convertMinutesToMilliseconds(Integer minutes) {
         Integer MILLISECONDS_PER_MINUTE = null; // Make this value a constant
-        Integer milliseconds = minutes * MILLISECONDS_PER_MINUTE;
+        Integer milliseconds;
         return null; // Replace null with the variable you used to store the result
     }    
 
     /**
      * Calculates the average of three numbers.
+     * Formula: Average = (Sum of Observations) ÷ (Total Numbers of Observations)
      * Example: averageOfThreeNumbers(1, 2, 3) should return 2
      * @param a The first number.
      * @param b The second number.
@@ -161,8 +165,7 @@ public with sharing class VariablesDatatypesOperators {
 
     /**
      * Adjusts the order of operations in an arithmetic expression to produce a desired result.
-     * In this case, parentheses are added to the expression (5 + 7) * 3 to ensure that addition
-     * is performed before multiplication.
+     * In this case, parentheses are added to the expression (5 + 7) * 3 to ensure that addition is performed before multiplication.
      * Example: adjustOrderOfOperations1(5, 7, 3) should return 36
      * @param a The first number.
      * @param b The second number.
@@ -186,7 +189,6 @@ public with sharing class VariablesDatatypesOperators {
         // The result of the expression as it is right now is 43. 
         // You should add parentheses so that the result of the expression becomes 8.
         Integer answer = 48 - 15 + 5 * 2;
-        // Return the modified result.
         return null; // Replace null with the variable you used to store the result
     }
 
@@ -207,13 +209,12 @@ public with sharing class VariablesDatatypesOperators {
         // Add parentheses around the multiplication and subtraction operations so that they are performed before division and addition
         Double result = a * b - c / (Double) d + e;
 
-        // Return the result
         return null; // Replace null with the variable you used to store the result
     }
 
     /**
      * Converts the temperature from Fahrenheit to Celsius.
-     * The formula to convert Fahrenheit to Celsius is (F - 32) * 5/9.
+     * Formula: Celsius = (Fahrenheit - 32) * 5/9.
      * @param fahrenheit The temperature in Fahrenheit.
      * @return The temperature in Celsius equivalent to the given Fahrenheit temperature.
      */
