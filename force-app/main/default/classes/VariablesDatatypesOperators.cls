@@ -119,6 +119,8 @@ public with sharing class VariablesDataTypesOperators {
     /**
      * Checks if a date is in the past.
      * Example: isDateInPast(Date.newInstance(2019, 1, 1)) should return true
+     * The concept of getting the current date is not specifically covered in the content this week, but you can use the Date class to get the current date.
+     * Resources: https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_today
      * @param dt The date to check.
      * @return True if the date is in the past, False otherwise.
      */
@@ -129,6 +131,8 @@ public with sharing class VariablesDataTypesOperators {
     /**
      * Checks if a date is today or in the future.
      * Example: isDateTodayOrFuture(Date.newInstance(2019, 1, 1)) should return false
+     * The concept of getting the current date is not specifically covered in the content this week, but you can use the Date class to get the current date.
+     * Resources: https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_today
      * @param dt The date to check.
      * @return True if the date is today or in the future, False otherwise.
      */
