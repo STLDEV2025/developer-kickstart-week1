@@ -235,12 +235,13 @@ public with sharing class VariablesDataTypesOperators {
     /**
      * Performs division and returns the result as a casted Integer.
      * It should cast the result to an Integer.
+     * Example: 3 / 2 => 1.5 should return 1
      * @param a The numerator.
      * @param b The denominator.
-     * @return The quotient as a rounded Integer.
+     * @return The quotient as a casted (round down) Integer.
      */
     public static Integer performDivisionAndCast(Double a, Double b) {
-        // Perform the division and round off the result.
+        // Perform the division and cast (round down) off the result.
         Double divisionResult = null;
 
         // Write the code for type casting the divisionResult to an Integer
