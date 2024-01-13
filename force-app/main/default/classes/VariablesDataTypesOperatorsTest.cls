@@ -74,15 +74,32 @@ public class VariablesDataTypesOperatorsTest {
         Assert.areEqual('HelloCloud', result, 'Incorrect concatenateStrings result');
     }
 
-    @IsTest
-    static void testCombineStrings() {
-        String result = VariablesDataTypesOperators.combineStrings('Hello', 'World', '!');
-        Assert.areEqual('#Hello CodeWorld!!', result, 'Incorrect combineStrings result');
-        result = VariablesDataTypesOperators.combineStrings('Hello', 'Cloud', '');
-        Assert.areEqual('#Hello CodeCloud!', result, 'Incorrect combineStrings result');
-        result = VariablesDataTypesOperators.combineStrings('I', '♥', '');
-        Assert.areEqual('#I Code♥!', result, 'Incorrect combineStrings result');
-    }
+	@IsTest
+	static void testCreateSentence() {
+		// Test with noun 'cat' and verb 'jumping'
+		String result = VariablesDataTypesOperators.createSentence('cat', 'jumping', '!');
+		Assert.areEqual(
+			'The cat is jumping!',
+			result,
+			'Incorrect createSentence result for noun "cat" and verb "jumping"'
+		);
+
+		// Test with noun 'bird' and verb 'flying'
+		result = VariablesDataTypesOperators.createSentence('bird', 'flying', '.');
+		Assert.areEqual(
+			'The bird is flying.',
+			result,
+			'Incorrect createSentence result for noun "bird" and verb "flying"'
+		);
+
+		// Additional test case with different noun and verb
+		result = VariablesDataTypesOperators.createSentence('dog', 'running', '?');
+		Assert.areEqual(
+			'The dog is running?',
+			result,
+			'Incorrect createSentence result for noun "dog" and verb "running"'
+		);
+	}
 
     @IsTest
     static void testIsDateInPast() {

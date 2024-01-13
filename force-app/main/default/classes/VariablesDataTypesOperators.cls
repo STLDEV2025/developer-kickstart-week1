@@ -91,21 +91,25 @@ public with sharing class VariablesDataTypesOperators {
         return null; // Replace null with the variable you used to store the result
     }
 
-    /**
-     * Concatenates two strings.
-     * Example: concatenateStrings('Hello', 'World') should return 'HelloWorld'
-     * @param str1 The first string.
-     * @param str2 The second string.
-     * @return The concatenated string.
-     */
-    public static String concatenateStrings(String str1, String str2) {
-        return null; // Replace null with the variable you used to store the result
-    }
+	/**
+	 * Constructs a sentence by concatenating a given noun, verb, and ending punctuation.
+	 * The sentence is structured to begin with 'The', followed by the noun, then 'is', the verb, and finally the ending punctuation.
+	 * Example: createSentence('cat', 'jumping', '!') should return 'The cat is jumping!'
+	 * Example: createSentence('bird', 'flying', '.') should return 'The bird is flying.'
+	 * @param noun The noun or subject of the sentence.
+	 * @param verb The verb or action of the sentence.
+	 * @param endingPunctuation The punctuation to end the sentence, e.g., '.', '!', '?'
+	 * @return The complete sentence as a single String.
+	 */
+	public static String createSentence(String noun, String verb, String endingPunctuation) {
+		return null; // Replace null with the variable you used to store the result
+	}
 
     /**
      * Combines three strings into one.
      * The goal is to concatenate firstPart, secondPart, and thirdPart to make a complete sentence.
      * Example: combineStrings('Hello', 'World', '!') should return '#Hello CodeWorld!!'
+     * Example: combineStrings('Warren', '' )
      * @param firstPart The first part of the sentence.
      * @param secondPart The second part of the sentence.
      * @param thirdPart The third part of the sentence.
