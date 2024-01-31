@@ -1,11 +1,11 @@
 
-# Developer Kickstart Week 1: Variables, Data Types, and Operators in Apex
+# Developer Kickstart Module 1: Variables, Data Types, and Operators in Apex
 
-This project is part of the Developer Kickstart Week 1 curriculum at Cloud Code Academy. It's designed to help beginner Salesforce developers learn and practice using variables, data types, and operators in the Apex programming language.
+This repository is part of the Developer Kickstart Module 1 curriculum at Cloud Code Academy. It's designed to help beginner Salesforce developers learn and practice using variables, data types, and operators in the Apex programming language.
 
 ## Goals of the Practice
 
-Through this practice project, you'll gain foundational knowledge about:
+Through this practice set, you'll gain foundational knowledge about:
 
 - Different data types in Apex, such as Integer, Decimal, Double, String, Boolean, and more.
 - How to declare and use variables in Apex.
@@ -13,17 +13,15 @@ Through this practice project, you'll gain foundational knowledge about:
 
 This foundational knowledge will prepare you for more advanced topics in Salesforce development.
 
-## Setup
+## Setup Instructions
 [Video Overview](https://vimeo.com/839597882/46fc06d93e)
 
-To get started, you'll need a Salesforce Trailhead Playground. If you don't have one, you can create it for free from any Trailhead module.
-
-After you've set up your Trailhead Playground:
-
-1. Install Visual Studio Code from [here](https://code.visualstudio.com/download).
-2. Install Salesforce Extension Pack in Visual Studio Code. This can be done by searching 'Salesforce Extension Pack' in the Extensions view in VS Code and clicking Install.
-3. Authorize your Trailhead Playground in Visual Studio Code. Press `Ctrl + Shift + P` to open the command palette and type 'SFDX: Authorize an Org', then press Enter. Follow the steps in the browser to log in to your Playground, then return to VS Code.
-4. Deploy the Apex Class by right clicking on the `VariablesDataTypesOperators` and  `VariablesDataTypesOperatorsTest` file a using the option SFDX: Deploy Source to Org.
+## Getting Started Checklist
+1. Configure your trailhead playground or developer org.
+2. Install Visual Studio Code from [here](https://code.visualstudio.com/download).
+3. Install Salesforce Extension Pack in Visual Studio Code. This can be done by searching 'Salesforce Extension Pack' in the Extensions view in VS Code and clicking Install.
+4. Authorize your org in Visual Studio Code. Press `Ctrl + Shift + P` to open the command palette and type 'SFDX: Authorize an Org', then press Enter. Follow the steps in the browser to log in to your Playground, then return to VS Code.
+5. Make sure to save and deploy your changes into Salesforce from your local machine. This can be done through the command pallet or right clicking the file you want to deploy and using the option `SFDX: Deploy this source to org`
 
 ## Running the Test Classes
 
