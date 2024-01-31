@@ -17,7 +17,7 @@ This foundational knowledge will prepare you for more advanced topics in Salesfo
 [Video Overview](https://vimeo.com/839597882/46fc06d93e)
 
 ## Getting Started Checklist
-1. Create/Configure a trailhead playground or developer org that will do you work on throughout this program.
+1. Create/Configure a trailhead playground or developer org to do your work throughout this program.
 2. Install Visual Studio Code from [here](https://code.visualstudio.com/download).
 3. Install Salesforce Extension Pack in Visual Studio Code. This can be done by searching 'Salesforce Extension Pack' in the Extensions view in VS Code and clicking Install.
 4. Authorize your org in Visual Studio Code. Press `Ctrl + Shift + P` to open the command palette and type 'SFDX: Authorize an Org', then press Enter. Follow the steps in the browser to log in to your org, then return to VS Code.
