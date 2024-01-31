@@ -1,4 +1,4 @@
-name: Run Apex Week 1 Unit Tests Manually
+name: Run Apex Module 1 Unit Tests Manually
 
 on:
   workflow_dispatch:
