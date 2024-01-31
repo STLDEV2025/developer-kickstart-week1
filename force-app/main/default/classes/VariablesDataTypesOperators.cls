@@ -1,5 +1,5 @@
 /**
- * This is the VariablesDataTypesOperators class, part of the Developer Kickstart Week 1 curriculum 
+ * This is the VariablesDataTypesOperators class, part of the Developer Kickstart Module 1 curriculum 
  * at Cloud Code Academy. This class serves as an introduction to the basic elements of Apex programming 
  * including variables, data types, and operators.
  * 
@@ -15,7 +15,7 @@
  * Users of this class can expect to gain a strong foundation in Apex programming and be prepared for 
  * more advanced topics in Salesforce development.
  * 
- * If statements are not specifically covered in the lesson this week, but review week 2 flow control section for an overview if needed.
+ * If statements are not specifically covered in the lesson this module, but review module 2 flow control section for an overview if needed.
  * Resources: https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_if_else.htm 
  * 
  * @author Your Name
