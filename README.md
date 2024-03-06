@@ -13,9 +13,6 @@ Through this practice repository, you'll gain foundational knowledge about:
 
 This foundational knowledge will prepare you for more advanced topics in Salesforce development.
 
-## Setup Instructions
-[Video Overview](https://vimeo.com/839597882/46fc06d93e)
-
 ## Getting Started Checklist
 1. Create/Configure a trailhead playground or developer org to do your work throughout this program.
 2. Install Visual Studio Code from [here](https://code.visualstudio.com/download).
