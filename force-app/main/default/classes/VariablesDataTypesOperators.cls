@@ -68,7 +68,7 @@ public with sharing class VariablesDataTypesOperators {
      * @param b The denominator.
      * @return The quotient of the division, or 0 if the denominator is zero.
      */
-    public static Decimal division(Integer a, Integer b) {
+    public static Double division(Double a, Double b) {
         return null; // Replace null with the variable you used to store the result
     }
 
