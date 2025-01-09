@@ -77,7 +77,7 @@
      * Example: division(6, 3) should return 2
      * @param a The numerator.
      * @param b The denominator.
-     * @return The quotient of the division, or 0 if the denominator is zero.
+     * @return The quotient of the division, or 0 if the denominator is zero.. 
      */
     public static Double division(Double a, Double b) {
         if(b == 0){ 
